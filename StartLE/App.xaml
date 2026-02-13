@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application
+    x:Class="StartLE.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:tb="using:H.NotifyIcon"
+    xmlns:local="using:StartLE">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
+            <XamlUICommand
+                x:Key="OnLeftClickCommand"
+                Label="StartLE Menu"
+                Description="ShartLE Menu"
+                >
+            </XamlUICommand>
+            <XamlUICommand
+                x:Key="OnRightClickCommand"
+                Label="User Menu"
+                Description="User Menu"
+                >
+            </XamlUICommand>
+            <XamlUICommand x:Key="EditCommand" />
+            <XamlUICommand x:Key="ReloadCommand" />
+            <XamlUICommand x:Key="HelpCommand" />
+            <XamlUICommand x:Key="ExitCommand" />
+            <!--<XamlUICommand x:Key="LeftClickMenuClosed" />-->
+
+            <MenuFlyout x:Key="LeftClickMenu" /> <!-- user menu (left click) -->
+
+            <MenuFlyout x:Key="RightClickMenu"> <!-- app control menu (right click) -->
+                <MenuFlyoutItem Text="Open in Notepad" Command="{StaticResource EditCommand}" CommandParameter="Open in Notepad"/>
+                <MenuFlyoutItem Text="Open in default" Command="{StaticResource EditCommand}" CommandParameter="Open in default"/>
+                <MenuFlyoutItem Text="Reload" Command="{StaticResource ReloadCommand}"/>
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem Text="Help" Command="{StaticResource HelpCommand}" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem Text="Exit" Command="{StaticResource ExitCommand}" />
+            </MenuFlyout>
+            <tb:TaskbarIcon
+                x:Key="StartTrayIcon"
+                ToolTipText="Start"
+                IconSource="/Assets/Flag.ico"
+                MenuActivation="LeftOrRightClick"
+                NoLeftClickDelay="True"
+                PopupActivation="DoubleClick"
+                ContextFlyout = "{StaticResource LeftClickMenu}"
+                LeftClickCommand="{StaticResource OnLeftClickCommand}"
+                RightClickCommand="{StaticResource OnRightClickCommand}"
+                >
+            </tb:TaskbarIcon>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

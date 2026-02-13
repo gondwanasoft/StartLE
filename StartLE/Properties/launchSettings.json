@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "StartLE": {
+      "commandName": "Project"
+    },
+    "Packaged": {
+      "commandName": "MsixPackage"
+    }
+  }
+}
