@@ -365,11 +365,12 @@ FodyWeavers.xsd
 # StartLE
 AI How-to/
 Documentation/
-Folder to XML/
+Folders to XML/
 Icon/
 Menu.xml initial/
 *.lnk
 *.bat
-Menu.xml
+/Menu.xml
 *.docx
 desktop.ini
+/Flag.ico

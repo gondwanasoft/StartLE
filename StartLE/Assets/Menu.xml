@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<startle version="1.0">
+  <menu>
+    <menu text="Games" >
+      <item text="Solitare" filename="ms-solitaire-collection:" />
+    </menu>
+    <menu text="Internet" >
+      <item text="Bing" filename="https://bing.com"/>
+    </menu>
+    <menu text="Media" >
+      <item text="Photos" filename="ms-photos:" />
+      <item text="Wallpaper" filename="C:\Windows\Web\Wallpaper\Windows\img0.jpg" />
+      <item text="Wallpaper (print)" filename="C:\Windows\Web\Wallpaper\Windows\img0.jpg" verb="print"/>
+    </menu>
+    <menu text="Utilities" >
+      <item text="Calculator" filename="calc.exe"/>
+      <item text="File Explorer" filename="c:\windows\explorer.exe"/>
+    </menu>
+    <menu text="Windows" >
+      <item text="Regedit" filename="regedit.exe" verb="runas"/>
+      <item text="Startup" filename="c:\windows\explorer.exe" args="shell:Startup" style="maximized"/>
+    </menu>
+  </menu>
+</startle>
