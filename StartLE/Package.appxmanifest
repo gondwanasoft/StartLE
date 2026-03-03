@@ -9,11 +9,11 @@
   IgnorableNamespaces="uap uap5 rescap">
 
   <Identity
-    Name="StartLE"
-    Publisher="CN=Gondwana Software"
-    Version="1.0.2.0" />
+    Name="GondwanaSoftware.StartLE"
+    Publisher="CN=B0BF46D3-58B9-40CF-91D2-6292B3B0377F"
+    Version="1.0.3.0" />
 
-  <mp:PhoneIdentity PhoneProductId="81381243-3a4d-441b-a5c0-fdff5a51d58f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="7d61887a-7b65-420d-a3ef-5fb389988676" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>StartLE</DisplayName>

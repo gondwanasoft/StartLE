@@ -1,9 +1,10 @@
 {
   "profiles": {
     "StartLE": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "nativeDebugging": false
     },
-    "Packaged": {
+    "Profile 1": {
       "commandName": "MsixPackage"
     }
   }

@@ -138,3 +138,7 @@ Regardless of how you start *StartLE*, its menu will not be available instantly.
 Please ask questions [here](https://gondwanasoftware.au/startle/contact.html).
 
 Please report issues [here](https://github.com/gondwanasoft/StartLE/issues).
+
+## Acknowledgement
+
+StartLE is built using [H.NotifyIcon](https://github.com/HavenDV/H.NotifyIcon).

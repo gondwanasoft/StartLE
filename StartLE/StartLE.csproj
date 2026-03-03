@@ -12,7 +12,7 @@
     <WinUISDKReferences>false</WinUISDKReferences>
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
-	<WindowsPackageType>MSIX</WindowsPackageType>
+	  <WindowsPackageType>MSIX</WindowsPackageType>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="MainWindow.xaml.cs" />
@@ -58,8 +58,8 @@
     <PackageReference Include="H.Hooks" Version="1.7.0" />
     <PackageReference Include="H.NotifyIcon" Version="2.4.1" />
     <PackageReference Include="H.NotifyIcon.WinUI" Version="2.4.1" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.7463" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260101001" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.7705" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260209005" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Assets\Menu.xml">
@@ -91,5 +91,8 @@
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundle>Never</AppxBundle>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+    <BaseOutputPath>D:\out</BaseOutputPath>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
   </PropertyGroup>
 </Project>
